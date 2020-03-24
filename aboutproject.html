@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        body {
+            background-image: url("https://cdn.wallpapersafari.com/99/56/A6xFLe.png")
+        }
+        h1 {
+            text-align: center;
+            font-family: "Arial Black";
+            color: yellow;
+            font-size:45px;
+        }
+        h2{
+            text-align: center;
+            font-family: "Arial Black";
+        }
+        p {
+            text-align: justify;
+            font-family: "Arial Black";
+        }
+        ul {
+            font-family: "Arial Black";
+            text-align: center;
+            font-size: 15px;
+        }
+        ol {
+            font-family: "Arial Black";
+            text-align: justify;
+            font-size: 15px;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 150px 2fr 2fr;
+            grid-template-areas:
+                    "header header headerpic"
+                    "nav main main"
+                    "footer1 footer2 footer3";
+            background-image: url("https://www.bvb.de/extension/bvbdesign/design/bvbdesign/images/layout/bg_yellow_full.jpg");
+            margin: auto;
+            width: 950px;
+            height: 1400px;
+            padding-right: 10px;
+        }
+        .title {
+            grid-area: header;
+            background-color: black;
+        }
+        .titlepic {
+            grid-area: headerpic;
+        }
+        .links {
+            grid-area: nav;
+        }
+        .about {
+            grid-area: main;
+        }
+        .playeroftheday {
+            grid-area: footer1;
+        }
+        .latesttransfer {
+            grid-area: footer2;
+        }
+        .nextmatch {
+            grid-area: footer3;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+
+        <h1>About Me</h1>
+    </div>
+    <div class="titlepic">
+        <img src="images/dortmundlogo.png"    height="150">
+    </div>
+    <div class="links">
+        <h2>Links:</h2>
+        <li>
+            <ul><a href="players.html"> Players <img src="images/playerslogo.png" height="20"></ul><br/></a>
+            <ul><a href="transfers.html"> Transfers <img src="images/transferslogo.png" height="20"></ul><br/></a>
+            <ul><a href="games.html">Games <img src="images/gameslogo.png" height="20"></ul><br/></a>
+            <ul><a href="index.html"> Main Page <img src="images/dortmundlogo.png" height="20"</ul></a>
+
+        </li>
+    </div>
+    <div class="about">
+        <h2>Reflections:</h2>
+        <li>
+            <ol>This project made me develop my skills not only in HTML and CSS, but also in time management.
+            In fact, time was probably my biggest adversary in this project. However, I managed to push through
+            on a project where I'm not going to lie, I would have probably procrasrinated to. My main solution for this was learning how
+            I worked. After I did, I found out how to be the most efficient I could be and thus, finish this long project
+            in the time given. Also, I decided to make tables for the players, which we did not learn in class. A great site,
+            called <a href="https://www.w3schools.com/html/">w3schools.com</a> really helped me, as well as confirm any suspicions
+            I had otherwise. Other classmates were also crucial, especially for the design. They would give me some constructive
+            critisism to help me develop the backdrop as well as the grid of this site.
+            </ol>
+            <ol>One thing I know about myself, is that I will always improvise, even if there is a plan. I had a plan, and I made
+            some pretty big changes from it. for example, <a href="https://docs.google.com/document/d/1kqnYSQLqGOreWBPA72kk3KPDnEp8m9fvgqVavOR030I/edit?usp=sharing">this document</a>
+            was supposed to be what my main page was to look like. Although there are some similarities, there are many differences too.
+                However, that's probably a good thing. Also, the Dortmund team colors are black and yellow, so it was quite obvious
+                that the color scheme had to match that too. In fact, the <a href="https://www.bvb.de/extension/bvbdesign/design/bvbdesign/images/layout/bg_yellow_full.jpg">backdrop for the grid</a>
+                is from the official Dortmund website. Like I said, I learned a lot about my own time management style.
+                I found <a href="https://www.calnewport.com/blog/2008/07/03/case-study-why-the-number-of-hours-you-spend-studying-means-nothing/"> a study</a>
+                that shows that working (or studying in that example) for hours on end is a bad idea. I used that knowledge
+                to help me work on this project.
+            </ol>
+            <ol>
+                I like my website because the amount of work that I put into this thing really shows the passion that I have for
+                the sport of soccer as well as my own team, Borussia Dortmund. I think that other people would also like this site because
+                if they see how much work I put into something that I like, maybe it will motivate them to do the same with something that they all like.
+                In fact, one of my biggest regrets about this site is that I never learned JavaScript early enough to implement it
+                into this site, as I wanted to add more detail. I think that this site will do quite well, because of the amount of CSS and HTML that I used.
+                However, I find that most of my attention was drawn to the tables of the players. If it wasn't, who knows how well I could've done.
+
+            </ol>
+        </li>
+    </div>
+    <div class="playeroftheday">
+        <h2>Player of the day:<h2/> <br/>
+            <img src="images/playerofthedaylogo.jpg" height="150"><br/>
+            <h2>Erling Haaland</h2><br/>
+    </div>
+    <div class="latesttransfer">
+        <h2>Latest transfer:<h2/> <br/>
+            <img src="images/latesttransferlogo.jfif" height="150"
+                 width="350"><br/>
+            <h2>Jacob Bruun Larsen</h2><br/>
+    </div>
+    <div class="nextmatch">
+        <h2>Next game:<h2/> <br/>
+            <img src="images/nextmatchlogo.jfif"
+                 height="150"><br/>
+            <h2>Eintract Frankfurt</h2><br/>
+    </div>
+</div>
+</body>
+</html>

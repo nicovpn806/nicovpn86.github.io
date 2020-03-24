@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Players</title>
+    <style>
+        body {
+            background-image: url("https://cdn.wallpapersafari.com/99/56/A6xFLe.png")
+        }
+        h1 {
+            text-align: center;
+            font-family: "Arial Black";
+            color: yellow;
+            font-size:45px;
+        }
+        h2{
+            text-align: center;
+            font-family: "Arial Black";
+        }
+        h3{
+            text-align: center;
+            font-family: "Arial Black";
+        }
+        p {
+            text-align: justify;
+            font-family: "Arial Black";
+        }
+        ul {
+            font-family: "Arial Black";
+            text-align: center;
+            font-size: 15px;
+        }
+        td {
+            font-family: "Arial";
+            text-align: center;
+        }
+        th {
+            font-family: "Arial";
+            text-align: center;
+            font-weight: bold;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+        table {
+            : ;
+        }
+        img.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 500px 500px 200px;
+            grid-template-rows:  150px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px;
+            grid-template-areas:
+                    "header header headerpic"
+                    "main main nav"
+                    "reus reus reuspic"
+                    "haaland haaland haalandpic"
+                    "sancho sancho sanchopic"
+                    "hazard hazard hazardpic"
+                    "brandt brandt brandtpic"
+                    "witsel witsel witselpic"
+                    "guerreiro guerreiro guerreiropic"
+                    "hakimi hakimi hakimipic"
+                    "hummels hummels hummelspic"
+                    "zagadou zagadou zagadoupic"
+                    "burki burki burkipic"
+                    "akanji akanji akanjipic"
+                    "can can canpic"
+                    "reyna reyna reynapic"
+                    "gotze gotze gotzepic"
+                    "hitz hitz hitzpic"
+                    "footer3 footer2 footer1";
+            background-image: url("https://www.bvb.de/extension/bvbdesign/design/bvbdesign/images/layout/bg_yellow_full.jpg");
+            margin: auto;
+            width: 1250px;
+            height: 9100px;
+            padding-right: 10px;
+
+        }
+        .title {
+            grid-area: header;
+            background-color: black;
+        }
+        .titlepic {
+            grid-area: headerpic;
+        }
+        .links {
+            grid-area: nav;
+        }
+        .about {
+            grid-area: main;
+        }
+        .playeroftheday {
+            grid-area: footer1;
+        }
+        .latesttransfer {
+            grid-area: footer2;
+        }
+        .nextmatch {
+            grid-area: footer3;
+        }
+        .marco {
+            grid-area: reus;
+        }
+        .marcopic {
+            grid-area: reuspic
+        }
+        .erling {
+            grid-area: haaland;
+        }
+        .erlingpic {
+            grid-area: haalandpic;
+        }
+        .jadon {
+            grid-area: sancho;
+        }
+        .jadonpic {
+            grid-area: sanchopic
+        }
+        .thorgan {
+            grid-area: hazard
+        }
+        .thorganpic {
+            grid-area: hazardpic;
+        }
+        .julian {
+            grid-area: brandt
+        }
+        .julianpic {
+            grid-area: brandtpic
+        }
+        .axel {
+            grid-area: witsel;
+        }
+        .axelpic {
+            grid-area: witselpic;
+        }
+        .raphael {
+            grid-area: guerreiro;
+        }
+        .raphaelpic {
+            grid-area: guerreiropic;
+        }
+        .achraf {
+            grid-area: hakimi;
+        }
+        .achrafpic {
+            grid-area: hakimipic;
+        }
+        .mats {
+            grid-area: hummels
+        }
+        .matspic {
+            grid-area: hummelspic;
+        }
+        .dan-axel {
+            grid-area: zagadou;
+        }
+        .dan-axelpic {
+            grid-area: zagadoupic;
+        }
+        .roman {
+            grid-area: burki;
+        }
+        .romanpic {
+            grid-area: burkipic;
+        }
+        .manuel {
+            grid-area: akanji;
+        }
+        .manuelpic {
+            grid-area: akanjipic;
+        }
+        .emre {
+            grid-area: can;
+        }
+        .emrepic {
+            grid-area: canpic;
+        }
+        .giovanni {
+            grid-area: reyna;
+        }
+        .giovannipic {
+            grid-area: reynapic
+        }
+        .mario {
+            grid-area: gotze;
+        }
+        .mariopic {
+            grid-area: gotzepic;
+        }
+        .marwin {
+            grid-area: hitz;
+        }
+        .marwinpic {
+            grid-area: hitzpic;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+
+        <h1>Players</h1>
+    </div>
+    <div class="titlepic">
+        <img src="images/dortmundlogo.png"    height="150">
+    </div>
+    <div class="links">
+        <h2>Links:</h2>
+            <li>
+                <ul><a href="aboutproject.html"> About project <img src="images/aboutprojectlogo.png" height="20"></ul><br/></a>
+                 <ul><a href="transfers.html"> Transfers <img src="images/transferslogo.png" height="20"></ul><br/></a>
+                 <ul><a href="games.html">Games <img src="images/gameslogo.png" height="20"></ul><br/></a>
+                 <ul><a href="index.html"> Main Page <img src="images/dortmundlogo.png" height="20"</ul></a>
+
+            </li>
+    </div>
+    <div class="about">
+        <h2>Players:</h2>
+        <p>This page gives an in-depth analysis on 15 of Dortmund's best players. Their birthday, birthplace, nationality, size, weight, number, position and former clubs are all given, as well as
+            The amount of time they have been at the club for. This information has been given by the official Borussia Dortmund website, <a href="https://www.bvb.de/eng">bvb.de.</a> There is also an analysis
+            of the statistics. Matches played, goals, assists, own goals, Substitutions, Yellow and red cards, penalty goals, minutes per goal and minutes played are all given, as well
+            as goals conceded and clean sheets for goalkeepers. This information has been given by <a href="https://www.transfermarkt.com/borussia-dortmund/startseite/verein/16">transfermarkt.com.</a><br/>
+            <img src="images/playerstitle.jpg" width="1000" height="300">
+        </p>
+    </div>
+    <div class="marco">
+        <h2>Marco Reus</h2>
+        <table style="width:945px">
+             <tr>
+                 <th>Date of birth</th>
+                 <th>Place of birth</th>
+                 <th>Nationality</th>
+                 <th>Size</th>
+                 <th>Weight</th>
+                 <th>Number</th>
+                 <th>Position</th>
+                 <th>Former Clubs</th>
+                 <th>At Dortmund since</th>
+             </tr>
+            <tr>
+                 <td>31/05/1989</td>
+                 <td>Dortmund, West Germany</td>
+                 <td>Germany</td>
+                 <td>180cm</td>
+                 <td>71kg</td>
+                <td>11</td>
+                  <td>CAM</td>
+                 <td>RW Ahlen, Borussia Mönchengladbach</td>
+                 <td>01/07/2012</td>
+              </tr>
+        </table>
+        <h3>Statistics:</h3>
+        <table style="width:945px">
+            <tr>
+                <th>Competition</th>
+                <th>Games Played</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Own Goals</th>
+                <th>Substituted on</th>
+                <th>Substituted off</th>
+                <th>Yellow Cards</th>
+                <th>Second Yellow Cards</th>
+                <th>Red Cards</th>
+                <th>Penalty Goals</th>
+                <th>Minutes Per Goal</th>
+                <th>Minutes Played</th>
+            </tr>
+            <tr>
+                <th>Bundesliga</th>
+                <td>19</td>
+                <td>11</td>
+                <td>6</td>
+                <td>0</td>
+                <td>1</td>
+                <td>8</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>137'</td>
+                <td>1503'</td>
+            </tr>
+            <tr>
+                <th>DFB-Pokal</th>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>168'</td>
+                <td>168'</td>
+            </tr>
+            <tr>
+                <th>Champions League</th>
+                <td>4</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0'</td>
+                <td>360'</td>
+            </tr>
+        </table>
+    </div>
+       <div class="marcopic">
+                <img src="images/reuspic" width="250" height="410" class="center" alt="Marco Reus">
+       </div>
+    <div class="erling">
+        <h2>Erling Braut Håland</h2>
+        <table style="width:945px">
+            <tr>
+                <th>Date of birth</th>
+                <th>Place of birth</th>
+                <th>Nationality</th>
+                <th>Size</th>
+                <th>Weight</th>
+                <th>Shirt Number</th>
+                <th>Position</th>
+                <th>Former Clubs</th>
+                <th>At Dortmund since</th>
+            </tr>
+            <tr>
+                <td>21/07/2000</td>
+                <td>Leeds, England</td>
+                <td>Norway</td>
+                <td>194cm</td>
+                <td>87kg</td>
+                <td>17</td>
+                <td>ST</td>
+                <td>Bryne FK, Molde FK, Red Bull Salzburg</td>
+                <td>01/01/2020</td>
+            </tr>
+        </table>
+        <h3>Statistics:</h3>
+        <table style="width:945px">
+            <tr>
+                <th>Competition</th>
+                <th>Games Played</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Own Goals</th>
+                <th>Substituted on</th>
+                <th>Substituted off</th>
+                <th>Yellow Cards</th>
+                <th>Second Yellow Cards</th>
+                <th>Red Cards</th>
+                <th>Penalty Goals</th>
+                <th>Minutes Per Goal</th>
+                <th>Minutes Played</th>
+            </tr>
+            <tr>
+                <th>Bundesliga</th>
+                <td>4</td>
+                <td>7</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>28'</td>
+                <td>111'</td>
+            </tr>
+            <tr>
+                <th>DFB-Pokal</th>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>44'</td>
+                <td>44'</td>
+            </tr>
+            <tr>
+                <th>Champions League</th>
+                <td>6</td>
+                <td>8</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>47'</td>
+                <td>374'</td>
+            </tr>
+        </table>
+    </div>
+    <div class="erlingpic">
+         <img src="haalandpic" width="250" height="410" class="center" alt="Erling Braut Haaland">
+    </div>
+    <div class="jadon">
+    <h2>Jadon Sancho</h2>
+        <table style="width:945px">
+            <tr>
+                <th>Date of birth</th>
+                <th>Place of birth</th>
+                <th>Nationality</th>
+                <th>Size</th>
+                <th>Weight</th>
+                <th>Shirt Number</th>
+                <th>Position</th>
+                <th>Former Clubs</th>
+                <th>At Dortmund since</th>
+            </tr>
+            <tr>
+                <td>25/03/2000</td>
+                <td>London, England</td>
+                <td>England</td>
+                <td>180cm</td>
+                <td>76kg</td>
+                <td>7</td>
+                <td>RW</td>
+                <td>Manchester City</td>
+                <td>31/08/2017</td>
+            </tr>
+        </table>
+        <h3>Statistics:</h3>
+        <table style="width:945px">
+            <tr>
+                <th>Competition</th>
+                <th>Games Played</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Own Goals</th>
+                <th>Substituted on</th>
+                <th>Substituted off</th>
+                <th>Yellow Cards</th>
+                <th>Second Yellow Cards</th>
+                <th>Red Cards</th>
+                <th>Penalty Goals</th>
+                <th>Minutes Per Goal</th>
+                <th>Minutes Played</th>
+            </tr>
+            <tr>
+                <th>Bundesliga</th>
+                <td>19</td>
+                <td>12</td>
+                <td>14</td>
+                <td>0</td>
+                <td>1</td>
+                <td>7</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>128'</td>
+                <td>1541'</td>
+            </tr>
+            <tr>
+                <th>DFB-Pokal</th>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0'</td>
+                <td>256'</td>
+            </tr>
+            <tr>
+                <th>Champions League</th>
+                <td>6</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>234'</td>
+                <td>467'</td>
+            </tr>
+        </table>
+</div>
+    <div class="jadonpic">
+        <img src="images/jadonpic.png" width="250" height="410" class="center" alt="Jadon Sancho">
+    </div>
+    <div class="thorgan">
+    <h2>Thorgan Hazard</h2>
+        <table style="width:945px">
+            <tr>
+                <th>Date of birth</th>
+                <th>Place of birth</th>
+                <th>Nationality</th>
+                <th>Size</th>
+                <th>Weight</th>
+                <th>Shirt Number</th>
+                <th>Position</th>
+                <th>Former Clubs</th>
+                <th>At Dortmund since</th>
+            </tr>
+            <tr>
+                <td>31/05/1989</td>
+                <td>La Louvière, Belgium</td>
+                <td>Belgium</td>
+                <td>175cm</td>
+                <td>71kg</td>
+                <td>23</td>
+                <td>LW</td>
+                <td>Borussia Mönchengladbach</td>
+                <td>01/07/2019</td>
+            </tr>
+        </table>
+        <h3>Statistics:</h3>
+        <table style="width:945px">
+            <tr>
+                <th>Competition</th>
+                <th>Games Played</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Own Goals</th>
+                <th>Substituted on</th>
+                <th>Substituted off</th>
+                <th>Yellow Cards</th>
+                <th>Second Yellow Cards</th>
+                <th>Red Cards</th>
+                <th>Penalty Goals</th>
+                <th>Minutes Per Goal</th>
+                <th>Minutes Played</th>
+            </tr>
+            <tr>
+                <th>Bundesliga</th>
+                <td>20</td>
+                <td>4</td>
+                <td>9</td>
+                <td>0</td>
+                <td>5</td>
+                <td>8</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>333'</td>
+                <td>1331'</td>
+            </tr>
+            <tr>
+                <th>DFB-Pokal</th>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0'</td>
+                <td>223'</td>
+            </tr>
+            <tr>
+                <th>Champions League</th>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>4</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0'</td>
+                <td>344'</td>
+            </tr>
+        </table>
+</div>
+    <div class="thorganpic">
+        <img src="images/hazardpic.png" width="250" height="410" class="center" alt="Thorgan Hazard">
+    </div>
+    <div class="julian">
+    <h2>Julian Brandt</h2>
+        <table style="width:945px">
+            <tr>
+                <th>Date of birth</th>
+                <th>Place of birth</th>
+                <th>Nationality</th>
+                <th>Size</th>
+                <th>Weight</th>
+                <th>Shirt Number</th>
+                <th>Position</th>
+                <th>Former Clubs</th>
+                <th>At Dortmund since</th>
+            </tr>
+            <tr>
+                <td>31/05/1989</td>
+                <td>Bremen, Germany</td>
+                <td>Germany</td>
+                <td>185cm</td>
+                <td>83kg</td>
+                <td>19</td>
+                <td>CM</td>
+                <td>Bayer 04 Leverkeusen</td>
+                <td>01/07/2019</td>
+            </tr>
+        </table>
+        <h3>Statistics:</h3>
+        <table style="width:945px">
+            <tr>
+                <th>Competition</th>
+                <th>Games Played</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Own Goals</th>
+                <th>Substituted on</th>
+                <th>Substituted off</th>
+                <th>Yellow Cards</th>
+                <th>Second Yellow Cards</th>
+                <th>Red Cards</th>
+                <th>Penalty Goals</th>
+                <th>Minutes Per Goal</th>
+                <th>Minutes Played</th>
+            </tr>
+            <tr>
+                <th>Bundesliga</th>
+                <td>21</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td>7</td>
+                <td>8</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>137'</td>
+                <td>1503'</td>
+            </tr>
+            <tr>
+                <th>DFB-Pokal</th>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>90'</td>
+                <td>180'</td>
+            </tr>
+            <tr>
+                <th>Champions League</th>
+                <td>6</td>
+                <td>2</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>234'</td>
+                <td>467'</td>
+            </tr>
+        </table>
+</div>
+    <div class="julianpic">
+        <img src="images/brandtpic.png" width="250" height="410" class="center" alt="Julian Brandt">
+    </div>
+    <div class="axel">
+    <h2>Axel Witsel</h2>
+        <table style="width:945px">
+            <tr>
+                <th>Date of birth</th>
+                <th>Place of birth</th>
+                <th>Nationality</th>
+                <th>Size</th>
+                <th>Weight</th>
+                <th>Shirt Number</th>
+                <th>Position</th>
+                <th>Former Clubs</th>
+                <th>At Dortmund since</th>
+            </tr>
+            <tr>
+                <td>12/01/1989</td>
+                <td>Liège, Belgium</td>
+                <td>Belgium</td>
+                <td>186cm</td>
+                <td>81kg</td>
+                <td>28</td>
+                <td>CM</td>
+                <td>Standard Liège, Benfica, Zenit, Tanjin Quanjian</td>
+                <td>01/07/2018</td>
+            </tr>
+        </table>
+        <h3>Statistics:</h3>
+        <table style="width:945px">
+            <tr>
+                <th>Competition</th>
+                <th>Games Played</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Own Goals</th>
+                <th>Substituted on</th>
+                <th>Substituted off</th>
+                <th>Yellow Cards</th>
+                <th>Second Yellow Cards</th>
+                <th>Red Cards</th>
+                <th>Penalty Goals</th>
+                <th>Minutes Per Goal</th>
+                <th>Minutes Played</th>
+            </tr>
+            <tr>
+                <th>Bundesliga</th>
+                <td>17</td>
+                <td>4</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>362'</td>
+                <td>1448'</td>
+            </tr>
+            <tr>
+                <th>DFB-Pokal</th>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0'</td>
+                <td>270'</td>
+            </tr>
+            <tr>
+                <th>Champions League</th>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0'</td>
+                <td>90'</td>
+            </tr>
+        </table>
+</div>
+    <div class="axelpic">
+        <img src="images/witselpic.png" width="250" height="410" class="center" alt="Axel Witsel">
+    </div>    <div class="raphael">
+    <h2>Raphaël Guerreiro</h2>
+    <table style="width:945px">
+        <tr>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Nationality</th>
+            <th>Size</th>
+            <th>Weight</th>
+            <th>Shirt Number</th>
+            <th>Position</th>
+            <th>Former Clubs</th>
+            <th>At Dortmund since</th>
+        </tr>
+        <tr>
+            <td>22/12/1993</td>
+            <td>Le Blanc-Mensil, France</td>
+            <td>Portugal</td>
+            <td>186cm</td>
+            <td>81kg</td>
+            <td>28</td>
+            <td>LB</td>
+            <td>Caen, Lorient</td>
+            <td>01/07/2018</td>
+        </tr>
+    </table>
+    <h3>Statistics:</h3>
+    <table style="width:945px">
+        <tr>
+            <th>Competition</th>
+            <th>Games Played</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Own Goals</th>
+            <th>Substituted on</th>
+            <th>Substituted off</th>
+            <th>Yellow Cards</th>
+            <th>Second Yellow Cards</th>
+            <th>Red Cards</th>
+            <th>Penalty Goals</th>
+            <th>Minutes Per Goal</th>
+            <th>Minutes Played</th>
+        </tr>
+        <tr>
+            <th>Bundesliga</th>
+            <td>16</td>
+            <td>4</td>
+            <td>3</td>
+            <td>0</td>
+            <td>3</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>311'</td>
+            <td>1242'</td>
+        </tr>
+        <tr>
+            <th>DFB-Pokal</th>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>0'</td>
+        </tr>
+        <tr>
+            <th>Champions League</th>
+            <td>6</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>368'</td>
+        </tr>
+    </table>
+</div>
+    <div class="raphaelpic">
+        <img src="images/guerreiropic.png" width="250" height="410" class="center" alt="Raphael Guerreiro">
+    </div>    <div class="achraf">
+    <h2>Achraf Hakimi</h2>
+    <table style="width:945px">
+        <tr>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Nationality</th>
+            <th>Size</th>
+            <th>Weight</th>
+            <th>Shirt Number</th>
+            <th>Position</th>
+            <th>Former Clubs</th>
+            <th>At Dortmund since</th>
+        </tr>
+        <tr>
+            <td>4/11/1998</td>
+            <td>Madrid, Spain</td>
+            <td>Morocco</td>
+            <td>181cm</td>
+            <td>73kg</td>
+            <td>5</td>
+            <td>RB</td>
+            <td>Real Madrid</td>
+            <td>01/07/2018</td>
+        </tr>
+    </table>
+    <h3>Statistics:</h3>
+    <table style="width:945px">
+        <tr>
+            <th>Competition</th>
+            <th>Games Played</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Own Goals</th>
+            <th>Substituted on</th>
+            <th>Substituted off</th>
+            <th>Yellow Cards</th>
+            <th>Second Yellow Cards</th>
+            <th>Red Cards</th>
+            <th>Penalty Goals</th>
+            <th>Minutes Per Goal</th>
+            <th>Minutes Played</th>
+        </tr>
+        <tr>
+            <th>Bundesliga</th>
+            <td>21</td>
+            <td>2</td>
+            <td>7</td>
+            <td>0</td>
+            <td>3</td>
+            <td>2</td>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>842'</td>
+            <td>1684'</td>
+        </tr>
+        <tr>
+            <th>DFB-Pokal</th>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>131'</td>
+        </tr>
+        <tr>
+            <th>Champions League</th>
+            <td>6</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>133'</td>
+            <td>533'</td>
+        </tr>
+    </table>
+</div>
+    <div class="achrafpic">
+        <img src="images/hakimipic.png" width="250" height="410" class="center" alt="Achraf Hakimi">
+    </div>
+    <div class="mats">
+    <h2>Mats Hummels</h2>
+    <table style="width:945px">
+        <tr>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Nationality</th>
+            <th>Size</th>
+            <th>Weight</th>
+            <th>Shirt Number</th>
+            <th>Position</th>
+            <th>Former Clubs</th>
+            <th>At Dortmund since</th>
+        </tr>
+        <tr>
+            <td>16/12/1988</td>
+            <td>Bergisch Gladbach, West Germany</td>
+            <td>Germany</td>
+            <td>191cm</td>
+            <td>94kg</td>
+            <td>15</td>
+            <td>CB</td>
+            <td>Bayern Munich</td>
+            <td>01/01/2008</td>
+        </tr>
+    </table>
+    <h3>Statistics:</h3>
+    <table style="width:945px">
+        <tr>
+            <th>Competition</th>
+            <th>Games Played</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Own Goals</th>
+            <th>Substituted on</th>
+            <th>Substituted off</th>
+            <th>Yellow Cards</th>
+            <th>Second Yellow Cards</th>
+            <th>Red Cards</th>
+            <th>Penalty Goals</th>
+            <th>Minutes Per Goal</th>
+            <th>Minutes Played</th>
+        </tr>
+        <tr>
+            <th>Bundesliga</th>
+            <td>19</td>
+            <td>1</td>
+            <td>3</td>
+            <td>1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1593'</td>
+            <td>1593'</td>
+        </tr>
+        <tr>
+            <th>DFB-Pokal</th>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>180'</td>
+        </tr>
+        <tr>
+            <th>Champions League</th>
+            <td>6</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>540'</td>
+        </tr>
+    </table>
+</div>
+    <div class="matspic">
+        <img src="images/hummelspic.png" width="250" height="410" class="center" alt="Mats Hummels">
+    </div>    <div class="dan-axel">
+    <h2>Dan-Axel Zagadou</h2>
+    <table style="width:945px">
+        <tr>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Nationality</th>
+            <th>Size</th>
+            <th>Weight</th>
+            <th>Shirt Number</th>
+            <th>Position</th>
+            <th>Former Clubs</th>
+            <th>At Dortmund since</th>
+        </tr>
+        <tr>
+            <td>31/05/1989</td>
+            <td>Créteil, France</td>
+            <td>France</td>
+            <td>196cm</td>
+            <td>90kg</td>
+            <td>2</td>
+            <td>CB</td>
+            <td>Paris Saint-Germain</td>
+            <td>01/07/2017</td>
+        </tr>
+    </table>
+    <h3>Statistics:</h3>
+    <table style="width:945px">
+        <tr>
+            <th>Competition</th>
+            <th>Games Played</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Own Goals</th>
+            <th>Substituted on</th>
+            <th>Substituted off</th>
+            <th>Yellow Cards</th>
+            <th>Second Yellow Cards</th>
+            <th>Red Cards</th>
+            <th>Penalty Goals</th>
+            <th>Minutes Per Goal</th>
+            <th>Minutes Played</th>
+        </tr>
+        <tr>
+            <th>Bundesliga</th>
+            <td>9</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>593'</td>
+        </tr>
+        <tr>
+            <th>DFB-Pokal</th>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>156'</td>
+        </tr>
+        <tr>
+            <th>Champions League</th>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>104'</td>
+        </tr>
+    </table>
+</div>
+    <div class="dan-axelpic">
+        <img src="images/zagadoupic.png" width="250" height="410" class="center" alt="Dan-Axel Zagadou">
+    </div>
+    <div class="roman">
+    <h2>Roman Bürki</h2>
+    <table style="width:945px">
+        <tr>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Nationality</th>
+            <th>Size</th>
+            <th>Weight</th>
+            <th>Shirt Number</th>
+            <th>Position</th>
+            <th>Former Clubs</th>
+            <th>At Dortmund since</th>
+        </tr>
+        <tr>
+            <td>14/11/1990</td>
+            <td>Münsigen, Switzerland</td>
+            <td>Switzerland</td>
+            <td>187cm</td>
+            <td>85kg</td>
+            <td>1</td>
+            <td>GK</td>
+            <td>SC Grasshopper, SC Freiburg</td>
+            <td>01/07/2015</td>
+        </tr>
+    </table>
+    <h3>Statistics:</h3>
+    <table style="width:945px">
+        <tr>
+            <th>Competition</th>
+            <th>Games Played</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Own Goals</th>
+            <th>Substituted on</th>
+            <th>Substituted off</th>
+            <th>Yellow Cards</th>
+            <th>Second Yellow Cards</th>
+            <th>Red Cards</th>
+            <th>Penalty Goals</th>
+            <th>Goals Conceded</th>
+            <th>Clean Sheets</th>
+        </tr>
+        <tr>
+            <th>Bundesliga</th>
+            <td>18</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>31</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>DFB-Pokal</th>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th>Champions League</th>
+            <td>6</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>8</td>
+            <td>2</td>
+        </tr>
+    </table>
+</div>
+    <div class="romanpic">
+        <img src="images/burkipic.png" width="250" height="410" class="center" alt="Roman Burki">
+    </div>
+    <div class="manuel">
+    <h2>Manuel Akanji</h2>
+    <table style="width:945px">
+        <tr>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Nationality</th>
+            <th>Size</th>
+            <th>Weight</th>
+            <th>Shirt Number</th>
+            <th>Position</th>
+            <th>Former Clubs</th>
+            <th>At Dortmund since</th>
+        </tr>
+        <tr>
+            <td>19/07/1995</td>
+            <td>Wiesendangen, Switzerland</td>
+            <td>Switzerland</td>
+            <td>187cm</td>
+            <td>91kg</td>
+            <td>16</td>
+            <td>CB</td>
+            <td>FC Basel</td>
+            <td>15/01/2018</td>
+        </tr>
+    </table>
+    <h3>Statistics:</h3>
+    <table style="width:945px">
+        <tr>
+            <th>Competition</th>
+            <th>Games Played</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Own Goals</th>
+            <th>Substituted on</th>
+            <th>Substituted off</th>
+            <th>Yellow Cards</th>
+            <th>Second Yellow Cards</th>
+            <th>Red Cards</th>
+            <th>Penalty Goals</th>
+            <th>Minutes Per Goal</th>
+            <th>Minutes Played</th>
+        </tr>
+        <tr>
+            <th>Bundesliga</th>
+            <td>20</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>1722'</td>
+        </tr>
+        <tr>
+            <th>DFB-Pokal</th>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>270'</td>
+        </tr>
+        <tr>
+            <th>Champions League</th>
+            <td>6</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>524'</td>
+        </tr>
+    </table>
+</div>
+    <div class="manuelpic">
+        <img src="akanjipic" width="250" height="410" class="center" alt="Manuel Akanji">
+    </div>
+    <div class="emre">
+    <h2>Emre Can</h2>
+    <table style="width:945px">
+        <tr>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Nationality</th>
+            <th>Size</th>
+            <th>Weight</th>
+            <th>Shirt Number</th>
+            <th>Position</th>
+            <th>Former Clubs</th>
+            <th>At Dortmund since</th>
+        </tr>
+        <tr>
+            <td>12/01/1994</td>
+            <td>Frankfurt, West Germany</td>
+            <td>Germany</td>
+            <td>184cm</td>
+            <td>82kg</td>
+            <td>27</td>
+            <td>CM</td>
+            <td>Liverpool, Juventus</td>
+            <td>31/01/2020</td>
+        </tr>
+    </table>
+    <h3>Statistics:</h3>
+    <table style="width:945px">
+        <tr>
+            <th>Competition</th>
+            <th>Games Played</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Own Goals</th>
+            <th>Substituted on</th>
+            <th>Substituted off</th>
+            <th>Yellow Cards</th>
+            <th>Second Yellow Cards</th>
+            <th>Red Cards</th>
+            <th>Penalty Goals</th>
+            <th>Minutes Per Goal</th>
+            <th>Minutes Played</th>
+        </tr>
+        <tr>
+            <th>Bundesliga</th>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>87'</td>
+            <td>87'</td>
+        </tr>
+        <tr>
+            <th>DFB-Pokal</th>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>1'</td>
+        </tr>
+        <tr>
+            <th>Champions League</th>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>0'</td>
+        </tr>
+    </table>
+</div>
+    <div class="emrepic">
+        <img src="images/canpic.png" width="250" height="410" class="center"alt="Emre Can">
+    </div>
+    <div class="giovanni">
+    <h2>Giovanni Reyna</h2>
+    <table style="width:945px">
+        <tr>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Nationality</th>
+            <th>Size</th>
+            <th>Weight</th>
+            <th>Shirt Number</th>
+            <th>Position</th>
+            <th>Former Clubs</th>
+            <th>At Dortmund since</th>
+        </tr>
+        <tr>
+            <td>13/11/2002</td>
+            <td>Sunderland, England</td>
+            <td>United States</td>
+            <td>183cm</td>
+            <td>68kg</td>
+            <td>32</td>
+            <td>CAM</td>
+            <td>New York City FC</td>
+            <td>12/01/20</td>
+        </tr>
+    </table>
+    <h3>Statistics:</h3>
+    <table style="width:945px">
+        <tr>
+            <th>Competition</th>
+            <th>Games Played</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Own Goals</th>
+            <th>Substituted on</th>
+            <th>Substituted off</th>
+            <th>Yellow Cards</th>
+            <th>Second Yellow Cards</th>
+            <th>Red Cards</th>
+            <th>Penalty Goals</th>
+            <th>Minutes Per Goal</th>
+            <th>Minutes Played</th>
+        </tr>
+        <tr>
+            <th>Bundesliga</th>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>76'</td>
+        </tr>
+        <tr>
+            <th>DFB-Pokal</th>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>24'</td>
+            <td>24'</td>
+        </tr>
+        <tr>
+            <th>Champions League</th>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>0'</td>
+        </tr>
+    </table>
+</div>
+    <div class="giovannipic">
+        <img src="images/reynapic.jfif" width="250" height="410" class="center" alt="Giovanni Reyna">
+    </div>    <div class="mario">
+    <h2>Mario Götze</h2>
+    <table style="width:945px">
+        <tr>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Nationality</th>
+            <th>Size</th>
+            <th>Weight</th>
+            <th>Shirt Number</th>
+            <th>Position</th>
+            <th>Former Clubs</th>
+            <th>At Dortmund since</th>
+        </tr>
+        <tr>
+            <td>03/06/1992</td>
+            <td>Memmigen, Germany</td>
+            <td>Germany</td>
+            <td>176cm</td>
+            <td>75kg</td>
+            <td>10</td>
+            <td>CAM</td>
+            <td>Bayern Munich</td>
+            <td>01/07/2016</td>
+        </tr>
+    </table>
+    <h3>Statistics:</h3>
+    <table style="width:945px">
+        <tr>
+            <th>Competition</th>
+            <th>Games Played</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Own Goals</th>
+            <th>Substituted on</th>
+            <th>Substituted off</th>
+            <th>Yellow Cards</th>
+            <th>Second Yellow Cards</th>
+            <th>Red Cards</th>
+            <th>Penalty Goals</th>
+            <th>Minutes Per Goal</th>
+            <th>Minutes Played</th>
+        </tr>
+        <tr>
+            <th>Bundesliga</th>
+            <td>12</td>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>7</td>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>163'</td>
+            <td>490'</td>
+        </tr>
+        <tr>
+            <th>DFB-Pokal</th>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>23'</td>
+        </tr>
+        <tr>
+            <th>Champions League</th>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0'</td>
+            <td>69'</td>
+        </tr>
+    </table>
+</div>
+    <div class="mariopic">
+        <img src="images/gotzepic.png" width="250" height="410" class="center" alt="Mario Gotze">
+    </div>
+    <div class="marwin">
+    <h2>Marwin Hitz</h2>
+    <table style="width:945px">
+        <tr>
+            <th>Date of birth</th>
+            <th>Place of birth</th>
+            <th>Nationality</th>
+            <th>Size</th>
+            <th>Weight</th>
+            <th>Shirt Number</th>
+            <th>Position</th>
+            <th>Former Clubs</th>
+            <th>At Dortmund since</th>
+        </tr>
+        <tr>
+            <td>31/05/1989</td>
+            <td>St. Gallen, Switzerland</td>
+            <td>Switzerland</td>
+            <td>194cm</td>
+            <td>89kg</td>
+            <td>35</td>
+            <td>GK</td>
+            <td>FC Augsburg</td>
+            <td>01/07/2018</td>
+        </tr>
+    </table>
+    <h3>Statistics:</h3>
+    <table style="width:945px">
+        <tr>
+            <th>Competition</th>
+            <th>Games Played</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Own Goals</th>
+            <th>Substituted on</th>
+            <th>Substituted off</th>
+            <th>Yellow Cards</th>
+            <th>Second Yellow Cards</th>
+            <th>Red Cards</th>
+            <th>Penalty Goals</th>
+            <th>Goals Conceded</th>
+            <th>Clean Sheets</th>
+        </tr>
+        <tr>
+            <th>Bundesliga</th>
+            <td>4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>DFB-Pokal</th>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Champions League</th>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </table>
+</div>
+    <div class="marwinpic">
+        <img src="images/hitzpic.jfif" width="250" height="410" class="center" alt="Marwin Hitz">
+    </div>
+    <div class="playeroftheday">
+        <h2>Player of the day:</h2> <br/>
+            <img src="images/playerofthedaylogo.jpg" height="150" class="center"><br/>
+            <h2>Erling Haaland</h2><br/>
+    </div>
+    <div class="latesttransfer">
+        <h2>Latest transfer:</h2> <br/>
+            <img src="images/latesttransferlogo.jfif" height="150" class="center"
+                 width="350"><br/>
+            <h2>Jacob Bruun Larsen</h2><br/>
+    </div>
+    <div class="nextmatch">
+        <h2>Next game:</h2> <br/>
+            <img src="images/nextmatchlogo.jfif"
+                 height="150" class="center"><br/>
+            <h2>Eintract Frankfurt</h2><br/>
+    </div>
+</div>
+</body>
+</html>

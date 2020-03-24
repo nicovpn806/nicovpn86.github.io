@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <style>
+        body {
+            background-image: url("https://cdn.wallpapersafari.com/99/56/A6xFLe.png")
+        }
+        h1 {
+            text-align: center;
+            font-family: "Arial Black";
+            color: yellow;
+            font-size:45px;
+        }
+        h2{
+            text-align: center;
+            font-family: "Arial Black";
+        }
+        p {
+            text-align: justify;
+            font-family: "Arial Black";
+        }
+        ul {
+            font-family: "Arial Black";
+            text-align: center;
+            font-size: 15px;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 150px 2fr 2fr;
+            grid-template-areas:
+                    "header header headerpic"
+                    "nav main main"
+                    "footer1 footer2 footer3";
+            background-image: url("https://www.bvb.de/extension/bvbdesign/design/bvbdesign/images/layout/bg_yellow_full.jpg");
+            margin: auto;
+            width: 950px;
+            height: 900px;
+            padding-right: 10px;
+        }
+        .title {
+            grid-area: header;
+            background-color: black;
+        }
+        .titlepic {
+            grid-area: headerpic;
+        }
+        .links {
+            grid-area: nav;
+        }
+        .about {
+            grid-area: main;
+        }
+        .playeroftheday {
+            grid-area: footer1;
+        }
+        .latesttransfer {
+            grid-area: footer2;
+        }
+        .nextmatch {
+            grid-area: footer3;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+
+        <h1>Borussia Dortmund</h1>
+    </div>
+    <div class="titlepic">
+        <img src="images/dortmundlogo.png"    height="150">
+    </div>
+    <div class="links">
+        <h2>Links:</h2>
+        <li>
+            <ul><a href="players.html"> Players <img src="images/playerslogo.png" height="20"></ul><br/></a>
+            <ul><a href="transfers.html"> Transfers <img src="images/transferslogo.png" height="20"></ul><br/><a/>
+            <ul><a href="games.html">Games <img src="images/gameslogo.png" height="20"></ul><br/></a>
+            <ul><a href="aboutproject.html"> About project <img src="images/aboutprojectlogo.png" height="20"></ul></a>
+
+        </li>
+    </div>
+    <div class="about">
+        <h2>About:</h2>
+        <p>Ballspielverein Borussia 09 e.V. Dortmund, commonly known as Borussia Dortmund, BVB, or simply Dortmund, is a soccer club based in Dortmund, Germany.
+            They currently play in the top tier of the German football league system, the Bundesliga. Their stadium is called the Signal Iduna Park, but most fans call it the Westfalenstadion. It can contain 81,365 people inside the stadium, making it Germany's largest. Their fanbase is widely
+            regarded as some of the most enthusiastic in the world. They have won 9 league titles, the latest one being in 2013. They are currently being managed by the Swiss Lucien Favre, who has coached them since the 22<sup>nd</sup> of May 2018.
+            They are also widely known for being the only association football club in the world to have stock shares. The CEO of this prestigious football club is Hans-Joachim Watzke. Their captain is the
+            30 year old Marco Reus, in his 7<sup>th</sup> consecutive season for the club.
+        </p>
+    </div>
+    <div class="playeroftheday">
+        <h2>Player of the day:<h2/> <br/>
+            <img src="images/playerofthedaylogo.jpg" height="150"><br/>
+            <h2>Erling Haaland</h2><br/>
+    </div>
+    <div class="latesttransfer">
+        <h2>Latest transfer:<h2/> <br/>
+            <img src="images/latesttransferlogo.jfif" height="150"
+                 width="350"><br/>
+            <h2>Jacob Bruun Larsen</h2><br/>
+    </div>
+    <div class="nextmatch">
+        <h2>Next game:<h2/> <br/>
+            <img src="images/nextmatchlogo.jfif"
+                 height="150"><br/>
+            <h2>Eintract Frankfurt</h2><br/>
+    </div>
+</div>
+</body>
+</html>

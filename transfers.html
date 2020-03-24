@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transfers</title>
+    <style>
+        body {
+            background-image: url("https://cdn.wallpapersafari.com/99/56/A6xFLe.png")
+        }
+        h1 {
+            text-align: center;
+            font-family: "Arial Black";
+            color: yellow;
+            font-size:45px;
+        }
+        h2{
+            text-align: center;
+            font-family: "Arial Black";
+        }
+        h3{
+            text-align: center;
+            font-family: "Arial Black";
+        }
+        p {
+            text-align: justify;
+            font-family: "Arial Black";
+        }
+        ul {
+            font-family: "Arial Black";
+            text-align: center;
+            font-size: 15px;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 150px 400px 300px 400px 350px;
+            grid-template-areas:
+                    "header header headerpic"
+                    "nav main main"
+                    "in in in"
+                    "out out out"
+                    "footer1 footer2 footer3";
+            background-image: url("https://www.bvb.de/extension/bvbdesign/design/bvbdesign/images/layout/bg_yellow_full.jpg");
+            margin: auto;
+            width: 950px;
+            height: 1650px;
+            padding-right: 10px;
+        }
+        .title {
+            grid-area: header;
+            background-color: black;
+        }
+        .titlepic {
+            grid-area: headerpic;
+        }
+        .links {
+            grid-area: nav;
+        }
+        .about {
+            grid-area: main;
+        }
+        .playeroftheday {
+            grid-area: footer1;
+        }
+        .latesttransfer {
+            grid-area: footer2;
+        }
+        .nextmatch {
+            grid-area: footer3;
+        }
+        .arrivals {
+            grid-area: in;
+        }
+        .departures {
+            grid-area: out;
+        }
+        img.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+
+        <h1>Transfers</h1>
+    </div>
+    <div class="titlepic">
+        <img src="images/dortmundlogo.png"    height="150">
+    </div>
+    <div class="links">
+        <h2>Links:</h2>
+        <li>
+            <ul><a href="players.html"> Players <img src="images/playerslogo.png" height="20"></ul></a><br/>
+            <ul><a href="aboutproject.html"> About project <img src="images/aboutprojectlogo.png" height="20"></ul></a><br/>
+            <ul><a href="games.html"> Games <img src="images/gameslogo.png" height="20"></ul></a><br/>
+            <ul><a href="index.html"> Main Page <img src="images/dortmundlogo.png" height="20"></ul></a><br/>
+
+        </li>
+    </div>
+    <div class="about">
+        <h2>Transfers:</h2>
+        <p>This page covers every single Borussia Dortmund transfer during the January transfer window. During the Januart transfer window,
+            clubs of all football leagues are allowed to spend money to buy a player, or to loan him. Dortmund have brought in 2 players, 1 on loan,
+            and have sold 3, giving them a profit of 34.1 million over the month of January.
+        </p>
+        <img src="images/transferwindow.jfif" class="center">
+    </div>
+    <div class="arrivals">
+        <h2>Transfers into Borussia Dortmund:</h2>
+        <h3>Erling Braut Håland. Full transfer from Red Bull Salzburg; 22 million dollars</h3>
+        <img src="images/haalandtransfer.jpg" width="950">
+        <h3>Emre Can. 6 month loan from Juventus with obligation to buy for 30 million dollars</h3>
+        <img src="images/cantransfer.jpg" width="950">
+    </div>
+    <div class="departures">
+        <h2>Transfers out of Borussia Dortmund:</h2>
+        <h3>Paco Alcacer. Full transfer to Villareal; 25.3 million dollars</h3>
+        <img src="images/alcacertransfer.jpg" width="950">
+        <h3>Julian Weigl. Full transfer to Benfica; 22 million dollars</h3>
+        <img src="images/weigltransfer.jpg" width="950">
+        <h3>Jacob Bruun Larsen. Full transfer to TSG Hoffenheim; 9.9 million dollars</h3>
+        <img src="images/larsentransfer.jpg" width="950">
+    </div>
+    <div class="playeroftheday">
+        <h2>Player of the day:<h2/> <br/>
+            <img src="images/playerofthedaylogo.jpg" height="150"><br/>
+            <h2>Erling Haaland</h2><br/>
+    </div>
+    <div class="latesttransfer">
+        <h2>Latest transfer:<h2/> <br/>
+            <img src="images/latesttransferlogo.jfif" height="150"
+                 width="350"><br/>
+            <h2>Jacob Bruun Larsen</h2><br/>
+    </div>
+    <div class="nextmatch">
+        <h2>Next game:<h2/> <br/>
+            <img src="images/nextmatchlogo.jfif"
+                 height="150"><br/>
+            <h2>Eintract Frankfurt</h2><br/>
+    </div>
+</div>
+</body>
+</html>

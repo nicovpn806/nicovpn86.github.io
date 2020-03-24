@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+    <style>
+        body {
+            background-image: url("https://cdn.wallpapersafari.com/99/56/A6xFLe.png")
+        }
+        h1 {
+            text-align: center;
+            font-family: "Arial Black";
+            color: yellow;
+            font-size:45px;
+        }
+        h2{
+            text-align: center;
+            font-family: "Arial Black";
+        }
+        p {
+            text-align: justify;
+            font-family: "Arial Black";
+        }
+        ul {
+            font-family: "Arial Black";
+            text-align: center;
+            font-size: 15px;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 150px 550px 350px 550px 350px 250px;
+            grid-template-areas:
+                    "header header headerpic"
+                    "nav main main"
+                    "last4 last4 last4"
+                    "detail detail detail"
+                    "next4 next4 next4"
+                    "footer1 footer2 footer3";
+            background-image: url("https://www.bvb.de/extension/bvbdesign/design/bvbdesign/images/layout/bg_yellow_full.jpg");
+            margin: auto;
+            width: 950px;
+            height: 2300px;
+            padding-right: 10px;
+        }
+        .title {
+            grid-area: header;
+            background-color: black;
+        }
+        .titlepic {
+            grid-area: headerpic;
+        }
+        .links {
+            grid-area: nav;
+        }
+        .about {
+            grid-area: main;
+        }
+        .playeroftheday {
+            grid-area: footer1;
+        }
+        .latesttransfer {
+            grid-area: footer2;
+        }
+        .nextmatch {
+            grid-area: footer3;
+        }
+        .pastgames {
+            grid-area: last4;
+        }
+        img.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .presentgame {
+            grid-area: detail;
+        }
+        .nextgames {
+            grid-area: next4;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+
+        <h1>Games</h1>
+    </div>
+    <div class="titlepic">
+        <img src="images/dortmundlogo.png"    height="150">
+    </div>
+    <div class="links">
+        <h2>Links:</h2>
+        <li>
+            <ul><a href="players.html"> Players <img src="images/playerslogo.png" height="20"></ul><br/></a>
+            <ul><a href="transfers.html"> Transfers <img src="images/transferslogo.png" height="20"></ul><br/></a>
+            <ul><a href="aboutproject.html"> About project <img src="images/aboutprojectlogo.png" height="20"></ul><br/></a>
+            <ul><a href="index.html"> Main Page <img src="images/dortmundlogo.png" height="20"></ul></a>
+
+        </li>
+    </div>
+    <div class="about">
+        <h2>Games:</h2>
+        <p>Here is the schedule of the past 5 games, as well as the next 4 games. The most previous game is covered in extreme detail. In that game,
+            Dortmund played Bayer Leverkeusen. In an amazing game that went down to the wire, the Black and Yellows unfortunately lost 4-3. Our
+            next game is against Eintracht Frankfurt.
+        </p>
+        <img src="images/eintrachtfrankfurt.jfif" width="600" class="center">
+    </div>
+    <div class="pastgames">
+        <h2>Last 4 games:</h2>
+        <img src="images/last%204%20games.png" width="600" class="center">
+    </div>
+    <div class="presentgame">
+        <h2>Last game: Bayer Leverkeusen (Away)</h2>
+        <img src="images/lastgame.png" width="600" class="center">
+    </div>
+    <div class="nextgames">
+        <h2>Next 4 games:</h2>
+        <img src="images/nextgames.jpg" width="600" class="center">
+    </div>
+    <div class="playeroftheday">
+        <h2>Player of the day:<h2/> <br/>
+            <img src="images/playerofthedaylogo.jpg" height="150"><br/>
+            <h2>Erling Haaland</h2><br/>
+    </div>
+    <div class="latesttransfer">
+        <h2>Latest transfer:<h2/> <br/>
+            <img src="images/latesttransferlogo.jfif" height="150"
+                 width="350"><br/>
+            <h2>Jacob Bruun Larsen</h2><br/>
+    </div>
+    <div class="nextmatch">
+        <h2>Next game:<h2/> <br/>
+            <img src="images/nextmatchlogo.jfif"
+                 height="150"><br/>
+            <h2>Eintract Frankfurt</h2><br/>
+    </div>
+</div>
+</body>
+</html>
